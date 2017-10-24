@@ -1,0 +1,483 @@
+@-moz-keyframes move {
+	0% {
+		-moz-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-moz-transform: translateX(-4.5%);
+		transform: translateX(-4.5%);
+	}
+}
+@-webkit-keyframes move {
+    0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(-4.5%);
+		transform: translateX(-4.5%);
+	}
+}
+@-o-keyframes move {
+    0% {
+		-o-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-o-transform: translateX(-4.5%);
+		transform: translateX(-4.5%);
+	}
+}
+@-ms-keyframes move {
+    0% {
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-ms-transform: translateX(-4.5%);
+		transform: translateX(-4.5%);
+	}
+}
+@keyframes move {
+    0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-4.5%);
+	}
+}
+.animation_bg3 {
+	-webkit-animation-name: move;
+	-moz-animation-name: move;
+	-ms-animation-name: move;
+	-o-animation-name: move;
+	animation-name: move;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	-o-animation-timing-function:linear;
+	animation-timing-function: linear;
+	-webkit-animation-duration: 12s;
+	-moz-animation-duration: 12s;
+	-ms-animation-duration: 12s;
+	-o-animation-duration: 12s;
+	animation-duration: 12s;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+	-o-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+/*Первый экран*/
+.screen1 {
+    height: 100%;
+    background: #ccc;
+    position: relative; 
+    overflow: hidden;
+    color:#fff;
+}
+.bg1 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg1-1.png) no-repeat 0 0 / cover;
+    z-index: 3;
+}
+.bg2 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg1-2.png) no-repeat 0 0 / cover;
+    z-index: 2;
+}
+.bg3 {
+    position: absolute;
+    top:0;
+    left:0; /* -5% */
+    width: 105%;
+    height: 100%;
+    background: url(../img/bg1-3.png) no-repeat 0 0 / cover;
+    z-index: 1;
+}
+.ind4 {
+    position: relative;
+    z-index: 4;
+}
+.about {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 37vh;
+    font-family: "MuseoSansLight";
+}
+.sc1-conv {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: auto;
+    z-index: 4;
+    margin-bottom: 10vh;
+}
+.conv-txt {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.cnv-butt {
+    display: inline-block;
+    text-decoration: none;
+    border:1px solid #fff;
+    width: 280px;
+    text-align: center;
+    color:#fff;
+    height: 65px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 65px;
+    cursor:pointer;
+    -webkit-transition: all 200ms ease-out;
+-moz-transition: all 200ms ease-out;
+-ms-transition: all 200ms ease-out;
+-o-transition: all 200ms ease-out;
+transition: all 200ms ease-out;
+}
+.cnv-butt:hover {
+    background: #fff;
+    color:#000;
+}
+.cnv-butt:focus {
+    color:#fff;
+    background: none;
+}
+.logo {
+    position: absolute;
+    top:20px;
+    left:40px;
+    z-index: 4;
+}
+.topmenu {
+    position: absolute;
+    top:30px;
+    right:40px;
+    z-index: 4;
+}
+.topmenu li {
+    display: inline-block;
+}
+.topmenu li a {
+    color:#fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.sharelink {
+    position: absolute;
+    top:50%;
+    right:40px;
+    z-index: 4;
+    list-style: none;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.sharelink li {
+    display: block;
+    margin: 10px 0;
+}
+.sharelink a {
+    opacity: 0.5;
+     -webkit-transition: all 200ms ease-out;
+-moz-transition: all 200ms ease-out;
+-ms-transition: all 200ms ease-out;
+-o-transition: all 200ms ease-out;
+transition: all 200ms ease-out;
+}
+.sharelink img {
+    display: block;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.sharelink a:hover {
+    opacity: 1;
+}
+.wrap_block_test .item_stage, 
+.wrap_block_test .block_country {
+  display: none;
+    position:absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.wrap_block_test .item_stage.start_item_stage, 
+.wrap_block_test .block_country.start_item_stage {
+  display: block;
+}
+.question {
+    font-size: 17px;
+    font-family: "MuseoSansMedium";
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.number-question {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom: 1.5rem;
+}
+.que-butt {
+    display: inline-block;
+    height: 49px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border:1px solid #fff;
+    color:#fff;
+    padding: 0 30px;
+    line-height: 46px;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+       -webkit-transition: all 200ms ease-out;
+-moz-transition: all 200ms ease-out;
+-ms-transition: all 200ms ease-out;
+-o-transition: all 200ms ease-out;
+transition: all 200ms ease-out;
+}
+.que-butt:hover {
+    background: #fff;
+    color:#4e260f;
+}
+/* Экран 2 */
+.screen2 {
+    height: 100%;
+    background: url(../img/bg2.jpg) no-repeat center bottom / cover;
+}
+.screen2 h2,
+.screen3 h2,
+.screen4 h2,
+.screen5 h2 {
+    line-height: 68px;
+    color: #FFFFFF;
+    font-size: 62px;
+    font-family: "MuseoSansBlack";
+    margin-top: 32vh;
+}
+.screen2 p,
+.screen3 p,
+.screen4 p,
+.screen5 p {
+    line-height: 21px;
+    letter-spacing: 1px;
+    margin: 17px 0 25px;
+}
+.screen4 p,
+.screen5 p {
+    color:#fff;
+}
+/* Экран 3 */
+.screen3 {
+    height: 100%;
+    background: url(../img/bg4.jpg) no-repeat center center / cover;
+}
+/* Экран 4 */
+.screen4 {
+    height: 100%;
+    background: url(../img/bg5.jpg) no-repeat center center / cover;
+}
+/* Экран 5 */
+.screen5 {
+    height: 100%;
+    background: url(../img/6g-gzbmy6oy.jpg) no-repeat center center / cover;
+}
+/* Экран 6 */
+.screen6 {
+    height: 100%;
+}
+.responsive {
+    height: 100%;
+}
+.respon-item {
+    height: 100%;
+    position: relative;
+}
+.ri1 {
+    background: url(../img/per.jpg) no-repeat center bottom / cover;
+}
+.ri2 {
+    background: url(../img/bolivi.jpg) no-repeat center bottom / cover;
+}
+.ri3 {
+    background: url(../img/patagon.jpg) no-repeat center bottom / cover;
+}
+.ri4 {
+    background: url(../img/afric.jpg) no-repeat center bottom / cover;
+}
+.ri5 {
+    background: url(../img/ecuado.jpg) no-repeat center bottom / cover;
+}
+.ri6 {
+    background: url(../img/brali.jpg) no-repeat center bottom / cover;
+}
+.ri7 {
+   background: url(../img/indonezi.jpg) no-repeat center bottom / cover;
+}
+.ri8 {
+   background: url(../img/nepa.jpg) no-repeat center bottom / cover;
+}
+.ri9 {
+    background: url(../img/per.jpg) no-repeat center bottom / cover;
+}
+.ri10 {
+    background: url(../img/americ.jpg) no-repeat center bottom / cover;
+}
+.rigray {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #756154;
+/*    background: url(../img/gray1.jpg) no-repeat center bottom / cover;*/
+    -webkit-transition: all 200ms ease-out;
+-moz-transition: all 200ms ease-out;
+-ms-transition: all 200ms ease-out;
+-o-transition: all 200ms ease-out;
+transition: all 200ms ease-out;
+    z-index: 1;
+    opacity: 0.75;
+}
+.respon-item:hover .rigray {
+    opacity: 0;    
+}
+.respon-item:hover .ri-func a {
+    margin-bottom: 0;
+}
+.ri-func {
+    position: absolute;
+    bottom: 7vh;
+    left:0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+}
+.ri-func span {
+    font-family: "MuseoSansBlack";    
+    line-height: 43px;
+    color: #FFFFFF;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.ri-func a {
+    color:#fff;
+	width: 199px;
+	height: 41px;
+    border:1px solid #fff;
+	line-height: 40px;
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px auto -41px;
+       -webkit-transition: all 200ms ease-out;
+-moz-transition: all 200ms ease-out;
+-ms-transition: all 200ms ease-out;
+-o-transition: all 200ms ease-out;
+transition: all 200ms ease-out;
+}
+.ri-func a:hover {
+    background: #fff;
+    color:#4e260f;
+}
+
+/*Screen7*/
+.screen7 {
+    height: 100%;
+    padding: 0 1vw;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.screen7 h2 {
+    line-height: 55px;
+    color: #2F2F2F;
+    font-size: 46px;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+.screen7 p {
+    color:#2F2F2F;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 42px;
+    margin-top: 15px;
+}
+.write-all-news {
+    display: inline-block;
+    width: 280px;
+    min-height: 64px;
+    background-color: #756154;
+    line-height: 19px;
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 62px;
+    margin-top: 3rem;
+     -webkit-transition: all 200ms ease-out;
+-moz-transition: all 200ms ease-out;
+-ms-transition: all 200ms ease-out;
+-o-transition: all 200ms ease-out;
+transition: all 200ms ease-out;
+}
+.write-all-news:hover {
+    background: #8A7567;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
