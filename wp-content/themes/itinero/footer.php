@@ -67,6 +67,7 @@
 </footer>
 <?php wp_footer(); ?>
 <script>
+	/*
 	$('#slider-cart').slick({
 		dots: false,
 		infinite: true,
@@ -117,7 +118,7 @@
 		});
 		$('input[type="submit"]').click(function(){
 			var wrap=$(this).parents('.item-tab');
-			$('a.download_file_link').attr({'href':wrap.find('.download_file').val(),'download':wrap.find('.download_file').val().replace(/http.*\//,'').replace(/\..*/,'')});
+			$('a.download_file_link').attr({'href':wrap.find('.download_file').val(),'download':wrap.find('.download_file').val().replace(/http.*\//,'').replace(/\..*//*,'')});
 			$('input.download_file_link').val(wrap.find('.download_file').val());
 		});
 		$('.tbvpis').click(function(){
@@ -130,7 +131,7 @@
 			$('.block-form-2').show();
 			return !1;
 		});
-	});
+	});*/
 </script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">

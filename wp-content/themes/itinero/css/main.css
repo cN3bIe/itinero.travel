@@ -99,13 +99,51 @@ a.block-dev{margin-top: 0;}
 
 
 .bg-section-2{background-image:url('../img/cn3bie/bg2.jpg');}
-.bg-section-3{background-image:url('../img/cn3bie/bg3.jpg');}
+.bg-section-3{background-image:url('../img/cn3bie/bg3-1.jpg');}
 .bg-section-4{background-image:url('../img/cn3bie/bg4.jpg');}
 .bg-section-5{background-image:url('../img/cn3bie/bg5.jpg');}
 @media(max-width:768px){
 	.content-section{height:277px;position:absolute;top:0;bottom:0;margin:auto}
 	.bg-section-2{background-image:url('../img/cn3bie/bg2_cr_min.jpg');}
-	.bg-section-3{background-image:url('../img/cn3bie/bg3_cr_min.jpg');}
+	.bg-section-3{background-image:url('../img/cn3bie/bg3-1_cr.jpg');}
 	.bg-section-4{background-image:url('../img/cn3bie/bg4_cr_min.jpg');}
 	.bg-section-5{background-image:url('../img/cn3bie/bg5_cr_min.jpg');}
+}
+@media (max-width: 768px){
+	.sc1-conv{
+		margin-top: 25em;
+	}
+	.logo-wr{
+		margin:0;
+		left:10px;
+	}
+	.logo-img{
+		left: 0;
+	}
+	.text_logo{
+		margin-left: 90px;
+	}
+	.about.v1 {
+		top: 250px;
+	}
+	.block-form{
+		padding: 0 30px;
+	}
+	span.wrap-input input.wpcf7-form-control,
+	span.wrap-input input.wpcf7-form-control:focus,
+	span.wrap-input input.wpcf7-form-control:active{
+		width: 100%;
+	}
+	#contacts{
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 480px){
+	.menu__list{
+		font-size: 28px;
+		height: 9em;
+	}
+	.menu--maria li.menu__item{
+		margin-bottom: 13px;
+	}
 }

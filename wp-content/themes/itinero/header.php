@@ -28,34 +28,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		}
 	</style>
 
-	<!-- Facebook Pixel Code -->
-	<script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-			n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t,s)}(window,document,'script',
-				'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '1263834287078771');
-			fbq('track', 'PageView');
-		</script>
-		<noscript>
-			<img height="1" width="1"
-			src="https://www.facebook.com/tr?id=1263834287078771&ev=PageView
-			&noscript=1"/>
-		</noscript>
-		<!-- End Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '349962655447164');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=349962655447164&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-174697-bXqyh';</script>
 		<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-112024-6w0ni';</script>
+<script type="text/javascript">
+var _cs = _cs || [];
+__cs.push(["setCsAccount", "S0xvbAdLnVwEofKTiwRUokQlYNM0vIon"]);
+</script>
+<script type="text/javascript" async src="//app.comagic.ru/static/cs.min.js"></script>
+  <script type="text/javascript">
+  function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+  }
 
+   $(document).ready(function() {
+
+      utm = [];
+  $.each(["utm_source", "utm_medium","utm_content", "utm_campaign", "utm_term", 'source_type', 'source', 'position_type', 'position', 'added', 'creative', 'matchtype'], function(i, v) {
+    utm[v] = getURLParameter(v) || $.cookie(v)||'';
+    $.cookie(v, utm[v], {
+      expires: 1,
+      path: '/'
+    });
+  });
+    });
+    </script>
 	</head>
 
 	<body <?php body_class(); ?>>
 		<div id="wrap">
 			<header class="header">
 				<div class="row columns">
-					<a href="/" class="wrap-a" style="position: absolute;"><img src="<?php echo get_template_directory_uri(); ?>/img/imgpsh_fullsize.png" alt="" class="inlogo"></a>
+					<a href="/" class="wrap-a logo logo-wr" style="position: absolute;">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/imgpsh_fullsize.png" alt="" class="inlogo logo-img">
+						<div class="text_logo">Агенство приключенческого туризма</div>
+					</a>
+
 					<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
 					<nav class="menu menu--maria">
 						<div class="close-menu"><i class="fa fa-times" aria-hidden="true"></i></div>

@@ -986,12 +986,36 @@ body.term-indonezija.tax-country header.header .topmenu .menu__item a{color:#000
 }
 
 
+.inlogo{
+	margin: 0;
+}
+.logo-wr{
+	width: auto;
+	margin-top: 20px;
+}
+.logo-img{
+	top: 0;
+	vertical-align: inherit;
+	position: relative;
+	float:left;
+}
+.text_logo{
+	margin-left: 110px;
+	width: 100px;
+	line-height: 21px;
+	color:  #fff;
+}
+#secondary input, .subscribe input{
+	width: 159px;
+}
+#secondary button, .subscribe button{
+	width: 103px
+}
 
 
-
-
-
-
+.wpcf7-not-valid{border-color: #f00 !important;}
+	.wpcf7-not-valid-tip,
+	.wpcf7-validation-errors{display: none !important;}
 
 
 

@@ -15,7 +15,7 @@ $(document).ready(function(){
 	var hash=location.hash;
 	if($(window).width()>768){
 		$('#fullpage').fullpage();
-		history.pushState('', document.title, window.location.pathname);
+		//history.pushState('', document.title, window.location.pathname);
 	}
 	if(hash && $(window).width()>768){
 		$.fn.fullpage.moveTo($('.section').index($(hash))+1);
@@ -49,7 +49,7 @@ $(document).ready(function(){
 		dots: false,
 		infinite: true,
 		speed: 300,
-		slidesToShow: 5,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		responsive: [
 		{
@@ -177,3 +177,68 @@ $('.item-tab').first().slideDown(function(){
 		icon: marker_url
 	});
 }*/
+
+	$('#slider-cart').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 1024,
+			settings: {slidesToShow: 4,slidesToScroll: 1}
+		},
+		{
+			breakpoint: 768,
+			settings: {slidesToShow: 3,slidesToScroll: 1}
+		},
+		{
+			breakpoint: 480,
+			settings: {slidesToShow: 1,slidesToScroll: 1}
+		}
+		]
+	});
+	var back_vpis=function(){
+		if($('a.download_file_link').first().attr('href')) $('a.download_file_link')[0].click();
+		// $.fileDownload();
+		// $('#download_file_link').attr('src',$('input.download_file_link').val());
+		$('.block-form').hide();
+		$('.thank_vpis').show();
+		setTimeout(function(){
+			$('.thank_vpis').hide();
+			$('.block-btn').show();
+		},2000);
+	},
+	back=function(){
+		$('.block-form').hide();
+		$('.thank').show();
+		setTimeout(function(){
+			$('.thank').hide();
+			$('.block-btn').show();
+		},2000);
+	},
+	send=function(){
+		back();
+	};
+	$(document).ready(function(){
+		$('input[name="tur"]').each(function(){
+			var wrap=$(this).parents('.item-tab');
+			$(this).val(wrap.find('.tur').val());
+		});
+		$('input[type="submit"]').click(function(){
+			var wrap=$(this).parents('.item-tab');
+			$('a.download_file_link').attr({'href':wrap.find('.download_file').val(),'download':wrap.find('.download_file').val().replace(/http.*\//,'').replace(/\..*/,'')});
+			$('input.download_file_link').val(wrap.find('.download_file').val());
+		});
+		$('.tbvpis').click(function(){
+			$(this).parents('.block-btn').hide();
+			$('.block-form-1').show();
+			return !1;
+		});
+		$('.tbskach, .btni-mappp').click(function(){
+			$(this).parents('.block-btn').hide();
+			$('.block-form-2').show();
+			return !1;
+		});
+	});
